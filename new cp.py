@@ -35,7 +35,7 @@ def predict_file(file_path, confidence=40, overlap=30):
 file1 = st.file_uploader("Upload a Image File")
 
 # Example usage for an image
-image_result = predict_file(r"C:\Users\prane\Downloads\exam.jpg")
+image_result = predict_file(r""C:\Users\neera\OneDrive\Desktop\CP\testcp3.jpeg"")
 print(image_result)
 
 # Example usage for a video (commented out, as the 'predict_video' method is hypothetical)
