@@ -1,5 +1,4 @@
 roboflow
-cv2
 pathlib
 pandas
 numpy
