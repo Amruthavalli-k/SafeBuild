@@ -45,7 +45,7 @@ if file1 is not None:
     # Example usage for an image
     image_result = predict_file(file1.name)
     print(image_result)
-
+    
     # Extract class and confidence lists from the result
     class_list = [prediction['class'] for prediction in image_result['predictions']]
     confidence_list = [prediction['confidence'] for prediction in image_result['predictions']]
