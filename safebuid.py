@@ -25,12 +25,12 @@ def predict_file(file_path, confidence=40, overlap=30):
 
     return result
 from PIL import Image
-logo = Image.open('logo1.png')
-icon = Image.open('clouds1.jpg')
+logo = Image.open('Sabu1.jpeg')
+icon = Image.open('Sabu1.jpeg')
 
-st.set_page_config(page_title="weather  EDA", page_icon=icon, layout="wide")
+st.set_page_config(page_title="Safe Build", page_icon=icon, layout="wide")
 st.image(logo)
-st.title("Exploratory Data Analysis on Weather Dataset")
+st.title("SAFE BUILD-AI at the Helm, Building a Safer Future.")
 st.image(icon,width=900)
 
 # Use st.file_uploader to allow users to upload an image file
