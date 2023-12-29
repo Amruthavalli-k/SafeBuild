@@ -37,7 +37,9 @@ st.video(video_path)
 # Use st.file_uploader to allow users to upload an image file
 file1 = st.file_uploader("Upload an Image File", type=["jpg", "jpeg", "png"])
 
+st.sidebar.title("Empowering safe building with SAFE BUILD")
 st.sidebar.image('safetygear.png',caption="SAFETY GEAR ", use_column_width=True)
+
 # Check if a file is uploaded
 if file1 is not None:
     # Example usage for an image
