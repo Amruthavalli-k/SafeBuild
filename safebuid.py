@@ -25,7 +25,6 @@ def predict_file(file_path, confidence=40, overlap=30):
 
     return result
 
-st.sidebar.image('safetygear.png',caption="SAFETY GEAR ", use_column_width=True)
 from PIL import Image
 icon = Image.open('Sabu1.jpeg')
 video_path="download.mp4"
@@ -37,6 +36,7 @@ st.video(video_path)
 # Use st.file_uploader to allow users to upload an image file
 file1 = st.file_uploader("Upload an Image File", type=["jpg", "jpeg", "png"])
 
+st.sidebar.image('safetygear.png',caption="SAFETY GEAR ", use_column_width=True)
 # Check if a file is uploaded
 if file1 is not None:
     # Example usage for an image
