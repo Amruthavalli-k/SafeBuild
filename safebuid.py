@@ -15,6 +15,8 @@ def predict_file(file_path, confidence=40, overlap=30):
     if file_type in ['.jpg', '.jpeg', '.png']:
         # For images
         result = model.predict(file_path, confidence=confidence, overlap=overlap).json()
+        icon1=model.predict(file_path, confidence=40, overlap=30).save("prediction.jpg")
+        st.image(icon1)
     elif file_type in ['.mp4', '.avi', '.mov']:
         # For videos
         # Implement video prediction logic here
