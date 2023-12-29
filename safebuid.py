@@ -31,7 +31,7 @@ video_path="download.mp4"
 
 st.set_page_config(page_title="Safe Build", page_icon=icon, layout="wide")
 st.title("\t\t👷🏻‍♀️SAFE BUILD-AI")
-st.subtitle("AI at the Helm, Building a Safer Future")
+st.header("AI at the Helm, Building a Safer Future")
 st.video(video_path)
 
 # Use st.file_uploader to allow users to upload an image file
