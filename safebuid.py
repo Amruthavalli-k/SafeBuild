@@ -27,7 +27,7 @@ def predict_file(file_path, confidence=40, overlap=30):
 
 from PIL import Image
 icon = Image.open('Sabu1.jpeg')
-video_path="download(1).mp4"
+video_path="download (1).mp4"
 
 st.set_page_config(page_title="Safe Build", page_icon=icon, layout="wide")
 st.title("👷🏻‍♀️SAFE BUILD-AI")
