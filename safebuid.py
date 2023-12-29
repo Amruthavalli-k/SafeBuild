@@ -25,13 +25,12 @@ def predict_file(file_path, confidence=40, overlap=30):
 
     return result
 from PIL import Image
-logo = Image.open('Sabu1.jpeg')
 icon = Image.open('Sabu1.jpeg')
+video_path="download.mp4"
 
 st.set_page_config(page_title="Safe Build", page_icon=icon, layout="wide")
-st.image(logo)
 st.title("SAFE BUILD-AI at the Helm, Building a Safer Future.")
-st.image(icon,width=900)
+st.video(video_path)
 
 # Use st.file_uploader to allow users to upload an image file
 file1 = st.file_uploader("Upload an Image File", type=["jpg", "jpeg", "png"])
