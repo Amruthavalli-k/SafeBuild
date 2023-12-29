@@ -24,6 +24,8 @@ def predict_file(file_path, confidence=40, overlap=30):
         print("Unsupported file type")
 
     return result
+
+st.sidebar.image('safetygear.png',caption="SAFETY GEAR ", use_column_width=True)
 from PIL import Image
 icon = Image.open('Sabu1.jpeg')
 video_path="download.mp4"
@@ -53,6 +55,15 @@ if file1 is not None:
     for i in range(len(res)):
         if res.cat[i] == "no hat" and res.conf[i] >= 0.5:
             st.warning("No Helmet Detected", icon='⚠️')
+        elif res.cat[i] == "no vest" and res.conf[i] >= 0.5:
+            st.warning("No VEST Detected", icon='⚠️')
+        elif res.cat[i] == "no gloves" and res.conf[i] >= 0.5:
+            st.warning("No Gloves Detected", icon='⚠️')
+        elif res.cat[i] == "no boot" and res.conf[i] >= 0.5:
+            st.warning("No Boot Detected", icon='⚠️')
+        elif res.cat[i] == "no boots" and res.conf[i] >= 0.5:
+            st.warning("No Boots Detected", icon='⚠️')
+        else:
+            st.write("All safety precautions are taken")
 
-# Note: The above code assumes that the 'model.predict_video' method is implemented in the Roboflow library.
-# You may need to check the Roboflow documentation for the correct usage.
+
