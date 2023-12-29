@@ -30,7 +30,8 @@ icon = Image.open('Sabu1.jpeg')
 video_path="download.mp4"
 
 st.set_page_config(page_title="Safe Build", page_icon=icon, layout="wide")
-st.title("SAFE BUILD-AI at the Helm, Building a Safer Future.")
+st.title("\t\t👷🏻‍♀️SAFE BUILD-AI")
+st.subtitle("AI at the Helm, Building a Safer Future")
 st.video(video_path)
 
 # Use st.file_uploader to allow users to upload an image file
@@ -54,15 +55,15 @@ if file1 is not None:
     # Display warnings for 'no hat' predictions with confidence >= 0.5
     for i in range(len(res)):
         if res.cat[i] == "no hat" and res.conf[i] >= 0.5:
-            st.warning("No Helmet Detected", icon='⚠️')
+            st.warning("No Helmet Detected! Non compliance of safety gear in respective site ", icon='⚠️')
         elif res.cat[i] == "no vest" and res.conf[i] >= 0.5:
-            st.warning("No VEST Detected", icon='⚠️')
+            st.warning("No VEST Detected ! Non compliance of safety gear in respective site", icon='⚠️')
         elif res.cat[i] == "no gloves" and res.conf[i] >= 0.5:
-            st.warning("No Gloves Detected", icon='⚠️')
+            st.warning("No Gloves Detected! Non compliance of safety gear in respective site", icon='⚠️')
         elif res.cat[i] == "no boot" and res.conf[i] >= 0.5:
-            st.warning("No Boot Detected", icon='⚠️')
+            st.warning("No Boot Detected! Non compliance of safety gear in respective site", icon='⚠️')
         elif res.cat[i] == "no boots" and res.conf[i] >= 0.5:
-            st.warning("No Boots Detected", icon='⚠️')
+            st.warning("No Boots Detected! Non compliance of safety gear in respective site", icon='⚠️')
         else:
             st.write("All safety precautions are taken")
 
