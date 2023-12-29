@@ -67,6 +67,6 @@ if file1 is not None:
         elif res.cat[i] == "no boots" and res.conf[i] >= 0.5:
             st.warning("No Boots Detected! Non compliance of safety gear in respective site", icon='⚠️')
         else:
-            st.write("Compliant to the Guidelines")
+            st.warning("Compliant to the Guidelines",icon='✅')
 
 
